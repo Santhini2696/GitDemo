@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-08-14T23:46:24 IST" name="Default suite" finished-at="2024-08-14T23:46:42 IST" duration-ms="18671">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestNGTestRunner@1349883]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-08-14T23:46:24 IST" name="Default test" finished-at="2024-08-14T23:46:42 IST" duration-ms="18671">
+      <class name="Runner.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:Runner.TestNGTestRunner@1349883]" started-at="2024-08-14T23:46:24 IST" name="setUpClass" finished-at="2024-08-14T23:46:25 IST" duration-ms="915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestNGTestRunner@1349883]" started-at="2024-08-14T23:46:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-14T23:46:42 IST" duration-ms="17404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for product search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search and Place the order for Products]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.TestNGTestRunner@1349883]" started-at="2024-08-14T23:46:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-08-14T23:46:41 IST" duration-ms="16650" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search Experience for product search in both home and Offers page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Search and Place the order for Products]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-47DNFE9', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62113c567575b82363b5e576fd069a51, getElementText {id=f.8C45A0FD50376B4E39FC144894873541.d.E80C10A8A9741219E14C0007E6DF341C.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\NAMBI\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49852/devtoo..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (62113c567575b82363b5e576fd069a51)] -> xpath: //h4[contains(text(),'Tomato - 1 Kg')]]
+Session ID: 62113c567575b82363b5e576fd069a51]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+  (Session info: chrome=127.0.6533.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-47DNFE9', ip: '192.168.0.103', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62113c567575b82363b5e576fd069a51, getElementText {id=f.8C45A0FD50376B4E39FC144894873541.d.E80C10A8A9741219E14C0007E6DF341C.e.48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.119, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\NAMBI\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49852}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: none, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49852/devtoo..., se:cdpVersion: 127.0.6533.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (62113c567575b82363b5e576fd069a51)] -> xpath: //h4[contains(text(),'Tomato - 1 Kg')]]
+Session ID: 62113c567575b82363b5e576fd069a51
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:201)
+at pageObjects.LandingPage.getProductName(LandingPage.java:43)
+at stepDefinition.LandingPagestepDefinition.user_searched_with_shortname_and_extracted_actual_name_of_product(LandingPagestepDefinition.java:49)
+at ✽.user searched with Shortname Beet and extracted actual name of product(file:///C:/Users/NAMBI/eclipse-workspace/CucumberFramework1/src/test/java/Features/searchpage.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.TestNGTestRunner@1349883]" started-at="2024-08-14T23:46:42 IST" name="tearDownClass" finished-at="2024-08-14T23:46:42 IST" duration-ms="294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
