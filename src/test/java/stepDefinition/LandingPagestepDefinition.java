@@ -48,7 +48,7 @@ public class LandingPagestepDefinition {
 		//testcontextsetup.driver.findElement(By.xpath("//input[@class='search-keyword']")).sendKeys(shortname);
 		testcontextsetup.landingpageproductname = landingPage.getProductName().split("-")[0].trim();
 	    System.out.println(testcontextsetup.landingpageproductname + " is extracted productname in the home page");
-	    
+	    System.out.println("Completed");
 	}
 	@When("Added {string} items of the selected product to cart")
 	public void Added_items_of_the_selected_product_to_cart(String quantity) {
